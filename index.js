@@ -51,8 +51,46 @@ const html = `
     </style>
   </head>
   <body>
-    <section>
-      Hello from Render!
-    </section>
+    <form action="ajoutliv.php" method="post" enctype="multipart/form-data">
+	<div class="form" align="center">
+		<h1>Ajout Livre</h1>
+	<fieldset>
+		<table>
+			<tr>
+				<td> <label for="Titre">Titre: </label></td>
+				<td>
+					<input type="text" name="Titre" id="Titre">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="id">Identifiant: </label></td>
+				<td><input type="texte" name="id" id="id"></td>
+			</tr>
+			<tr>
+				<td><label for="Auteur">Auteur: </label></td>
+				<td><input type="texte" name="Auteur" id="Auteur"></td>
+			</tr>
+			<tr>
+				<td><label for="Langue">Langue: </label></td>
+				<td><input type="texte" name="Langue" id="Langue"></td>
+			</tr>
+			<tr>
+				<td><label for="Categorie">Categorie: </label></td>
+				<td><input type="texte" name="Categorie" id="Categorie"></td>
+			</tr>
+			<tr>
+				<td><label for="file">Image: </label></td>
+				<td><input type="file" name="file" id="file"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="valider" value="Valider"> </td>
+				<td><input type="submit" name="annuler" value="Reset"> </td>
+			</tr>
+		</table>
+
+		
+	</fieldset>
+	</div>
+	</form>
   </body>
 </html>
